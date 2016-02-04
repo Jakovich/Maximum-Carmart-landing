@@ -93,4 +93,119 @@ body {
 	border: 1px solid #ffffff;
 }
 
+/*Prizes first time*/
+.prizes_slide_first {
+	background-color: #535a66;
+	background-image: url(../img/background_grey.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	color: #ffffff;
+	font-family: "Roboto", "Helvetica", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	padding-top: 40px;
+	padding-bottom: 130px;
+	text-align: center;
+}
 
+
+.prizes_slide_first .prize-item {
+	display: inline-block;
+	vertical-align: bottom;
+	text-align: center;
+	margin-left: 90px;
+}
+
+.prizes_slide_first .prize_name {
+	font-size: 31px;
+	line-height: 45px;
+	text-transform: uppercase;
+	letter-spacing: -0.04em;
+	margin:0;
+}
+
+.prizes_slide_first .prize_exp {
+	font-size: 14px;
+	line-height: 18px;
+	margin:0;
+	letter-spacing: 0;
+}
+
+/*Partners*/
+
+.partners{
+	background-color: #ffffff;
+}
+
+.partners h2 {
+	font-family: "PT Sans";
+	color: #535a66;
+	font-size: 60px;
+	font-weight: 700px;
+	letter-spacing:-0.02em;
+}
+.partner_item {
+	display: inline-block;
+	vertical-align: center;
+}
+
+/*green first*/
+.green_first {
+	background-color: #84c71b;
+	background-image: url(../img/background_green.jpg);
+	background-repeat:no-repeat;
+	background-position: center 0;
+	padding-top: 190px;
+}
+
+.green_first::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.green_first_header {
+	font-size:;
+	color: #ffffff;
+	text-align: center;
+}
+
+.green_first .left_column {
+	float : left;
+	width: 573px;
+	color: #535a66;
+}
+.green_first .right_column {
+	float: left;
+	width: 500px;
+	color: #535a66;
+}
+
+.left_column .spring {
+	background-color: #ffffff;
+	padding: 20px 20px 20px 60px;
+}
+
+.left_column .spring h2 {
+	font-size:36px;
+	line-height: 48px;
+}
+
+.left_column .spring p {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.left_column .spring_color {
+	color: #00a086;
+	font-weight: bold;
+}
+
+.left_column .spring_link {
+	font-size: 36px;
+	font-weight: bold;
+	text-decoration-style: dotted;
+	text-transform: uppercase;
+	color: #00a086;
+
+}
