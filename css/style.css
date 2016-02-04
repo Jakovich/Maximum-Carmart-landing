@@ -32,6 +32,25 @@ body {
 	right:0;
 }
 
+.main_nav{
+	background-color: #ffffff;
+}
+
+.main_menu {
+	list-style: none;
+	font-size:0;
+}
+.main_menu li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main_menu a {
+	color: #535a66;
+	text-decoration: none;
+	font-size: 15px;
+}
+
 .header_first_row {
 	width: 55%;
 	margin:0 auto;
@@ -175,15 +194,11 @@ body {
 	width: 573px;
 	color: #535a66;
 }
-.green_first .right_column {
-	float: left;
-	width: 500px;
-	color: #535a66;
-}
 
 .left_column .spring {
 	background-color: #ffffff;
 	padding: 20px 20px 20px 60px;
+	border-radius: 4px;
 }
 
 .left_column .spring h2 {
@@ -207,5 +222,47 @@ body {
 	text-decoration-style: dotted;
 	text-transform: uppercase;
 	color: #00a086;
+}
 
+.left_column .spring_footer{
+	padding: 20px 20px 20px 60px;
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.left_column .spring_footer .email_popup {
+	font-weight: bold;
+	text-decoration-style: dotted;
+	color: #ffffff;
+}
+
+.green_first .right_column {
+	float: left;
+	width: 500px;
+	color: #535a66;
+	margin-left: 80px;
+}
+
+.right_column .email_invit {
+	background-color: #ffffff;
+	padding: 20px 120px 20px 120px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.right_column .email_invit p {
+	font-size: 25px;
+	line-height: 35px;
+}
+.right_column .email_link {
+	font-family: "PT Sans";
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #00a086;
+	text-decoration: none;
+	padding: 5px 60px;
+	border: 1px solid #00a086;
+	border-radius: 4px;
 }
