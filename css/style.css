@@ -128,14 +128,14 @@ body {
 }
 
 
-.prizes_slide_first .prize-item {
+.prize-item {
 	display: inline-block;
 	vertical-align: bottom;
 	text-align: center;
 	margin-left: 90px;
 }
 
-.prizes_slide_first .prize_name {
+.prize_name {
 	font-size: 31px;
 	line-height: 45px;
 	text-transform: uppercase;
@@ -143,7 +143,7 @@ body {
 	margin:0;
 }
 
-.prizes_slide_first .prize_exp {
+.prize_exp {
 	font-size: 14px;
 	line-height: 18px;
 	margin:0;
@@ -249,6 +249,7 @@ body {
 	padding: 20px 120px 20px 120px;
 	border-radius: 4px;
 	text-align: center;
+	margin-bottom: 15px;
 }
 
 .right_column .email_invit p {
@@ -265,4 +266,32 @@ body {
 	padding: 5px 60px;
 	border: 1px solid #00a086;
 	border-radius: 4px;
+	
+}
+
+.right_column .adv {
+	border: 2px solid #ffffff;
+	padding: 25px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 25px;
+	line-height: 35px;
+}
+
+.right_column .win {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+/*prizes_slide_second*/
+.prizes_slide_second {
+	background-color: #535a66;
+	color: #ffffff;
+}
+
+.prizes_slide_second h2{
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
 }
