@@ -4,6 +4,7 @@ body {
 	min-width: 1230px;
 	font-family: "PT Sans Caption", "Arial", sans-serif;
 }
+
 .container{
 	width: 1210px;
 	padding: 0 10px;
@@ -19,6 +20,7 @@ body {
 	background-position: center 0;
 	color: #ffffff;
 }
+
 .intro_header {
 	position: relative;
 }
@@ -34,21 +36,29 @@ body {
 
 .main_nav{
 	background-color: #ffffff;
+	padding: 10px 0;
 }
 
 .main_menu {
 	list-style: none;
 	font-size:0;
 }
+
 .main_menu li {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 .main_menu a {
 	color: #535a66;
 	text-decoration: none;
 	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	padding: 10px 15px;
+}
+.main_menu a:hover {
+	background-color: grey;
 }
 
 .header_first_row {
@@ -64,8 +74,8 @@ body {
 	text-align: center;
 }
 
-.header_first_row p {
-	
+.first_row_subheader {
+	text-transform: uppercase;
 	font-size: 18px;
 	text-align:center;
 	line-height: normal;
@@ -112,6 +122,16 @@ body {
 	border: 1px solid #ffffff;
 }
 
+.link_intro .btn_intro:hover{
+	background-color: #00a086;
+	border: 1px solid #00a086;
+}
+
+.link_intro .btn_intro:active {
+	background-color: #84c71b;
+	border: 1px solid #84c71b;
+}
+
 /*Prizes first time*/
 .prizes_slide_first {
 	background-color: #535a66;
@@ -126,7 +146,6 @@ body {
 	padding-bottom: 130px;
 	text-align: center;
 }
-
 
 .prize-item {
 	display: inline-block;
@@ -162,10 +181,13 @@ body {
 	font-size: 60px;
 	font-weight: 700px;
 	letter-spacing:-0.02em;
+	text-align: center;
 }
+
 .partner_item {
 	display: inline-block;
-	vertical-align: center;
+	vertical-align: middle;
+	margin-right: 60px;
 }
 
 /*green first*/
@@ -184,9 +206,17 @@ body {
 }
 
 .green_first_header {
-	font-size:;
+	font-size:60px;
+	font-weight: bold;
+	text-transform: uppercase;
 	color: #ffffff;
+	line-height: 55px;
 	text-align: center;
+}
+
+.green_first_header span {
+	font-size: 45px;
+	font-weight: 400;
 }
 
 .green_first .left_column {
@@ -197,7 +227,7 @@ body {
 
 .left_column .spring {
 	background-color: #ffffff;
-	padding: 20px 20px 20px 60px;
+	padding: 20px 20px 60px 60px;
 	border-radius: 4px;
 }
 
@@ -224,6 +254,10 @@ body {
 	color: #00a086;
 }
 
+.left_column .spring_link:hover{
+	color: #84c71b;
+}
+
 .left_column .spring_footer{
 	padding: 20px 20px 20px 60px;
 	color: #ffffff;
@@ -231,7 +265,7 @@ body {
 	line-height: 30px;
 }
 
-.left_column .spring_footer .email_popup {
+.left_column .spring_footer .email_popup_link {
 	font-weight: bold;
 	text-decoration-style: dotted;
 	color: #ffffff;
@@ -256,6 +290,7 @@ body {
 	font-size: 25px;
 	line-height: 35px;
 }
+
 .right_column .email_link {
 	font-family: "PT Sans";
 	font-weight: 700;
@@ -266,7 +301,17 @@ body {
 	padding: 5px 60px;
 	border: 1px solid #00a086;
 	border-radius: 4px;
-	
+}
+
+.right_column .email_link:hover{
+	color: #ffffff;
+	background-color: #00a086;
+}
+
+.right_column .email_link:active{
+	color: #ffffff;
+	background-color: #84c71b;
+	border-color: #84c71b;
 }
 
 .right_column .adv {
@@ -335,6 +380,7 @@ body {
 	padding-bottom: 100px;
 	padding-top: 100px;
 }
+
 .green_second h2 {
 	text-align: center;
 	font-family: "Open Sans", sans-serif;
@@ -378,6 +424,17 @@ body {
 	display: inline-block;
 	transform: skewX(10deg);
 }
+
+.green_second .second_green_link:hover {
+	background-color:#00a086;
+	border-color: #00a086;
+}
+
+.green_second .second_green_link:active {
+	border-color: #84c71b;
+	background-color: #84c71b;
+}
+
 /*footer*/
 
 .main_footer {
@@ -400,6 +457,10 @@ body {
 	font-weight: bold;
 }
 
+.footer_contacts .footer_email:hover{
+	color: #84c71b;
+}
+
 .main_footer .footer_copyright {
 	color: #c0c6cd;
 	
@@ -407,8 +468,6 @@ body {
 
 
 /*___popups___*/
-
-
 
 .popup_window {
 	position: absolute;
@@ -505,7 +564,7 @@ body {
 }
 
 .email_popup_succes {
-	display: block;
+	display: none;
 	background-color: rgba(83,90,102,0.95);
 }
 
@@ -531,6 +590,7 @@ body {
 	font-size: 20px;
 	margin-bottom: 10px;
 }
+
 .email_succes_subheader {
 	font-family: "Roboto", sans-serif;
 	font-size: 24px;
@@ -539,6 +599,12 @@ body {
 	text-transform: uppercase;
 	width: 190px;
 }
+
+.popup_show {
+	display: block;
+}
+
+
 /*social_vidget (заменяются на виджеты, которые предоставляются сайтами vKontacte/Facebook)*/
 
 .vk_vidget {
