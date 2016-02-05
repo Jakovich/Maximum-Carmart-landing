@@ -14,6 +14,7 @@ body {
 /*Intro*/
 .intro {
 	padding-top: 10px;
+	padding-bottom: 35px;
 	background-color:#455c7c;
 	background-image:url('../img/background_intro.jpg');
 	background-repeat: no-repeat;
@@ -107,8 +108,9 @@ body {
 
 .link_intro p {
 	font-size: 25px;
-	line-height: 60px;
+	line-height: 30px;
 	letter-spacing: -0.04em;
+	margin-bottom:20px;
 }
 
 .link_intro .btn_intro{
@@ -139,9 +141,6 @@ body {
 	background-repeat: no-repeat;
 	background-position: center 0;
 	color: #ffffff;
-	font-family: "Roboto", "Helvetica", sans-serif;
-	font-weight: 700;
-	font-style: italic;
 	padding-top: 40px;
 	padding-bottom: 130px;
 	text-align: center;
@@ -152,6 +151,13 @@ body {
 	vertical-align: bottom;
 	text-align: center;
 	margin-left: 90px;
+	font-family: "Roboto", "Helvetica", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.prize-item:first-child{
+	margin-left: 0px;
 }
 
 .prize_name {
@@ -160,6 +166,7 @@ body {
 	text-transform: uppercase;
 	letter-spacing: -0.04em;
 	margin:0;
+	text-align: left;
 }
 
 .prize_exp {
@@ -167,6 +174,8 @@ body {
 	line-height: 18px;
 	margin:0;
 	letter-spacing: 0;
+	text-align: left;
+	
 }
 
 /*Partners*/
@@ -183,15 +192,27 @@ body {
 	letter-spacing:-0.02em;
 	text-align: center;
 }
+/*Рспределение по ширине!*/
+.partner_items {
+	width: 1090px;
+	text-align: justify;
+}
+.partner_items::after{
+	width: 100%;
+	height: 0;
+	content: '.';
+	overflow: hidden;
+}
 
 .partner_item {
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 60px;
+	margin-right: 20px;
+	margin-bottom: 30px;
 }
 
 /*green first*/
-.green_first {
+.green_slide_first {
 	background-color: #84c71b;
 	background-image: url(../img/background_green.jpg);
 	background-repeat:no-repeat;
@@ -199,7 +220,7 @@ body {
 	padding-top: 190px;
 }
 
-.green_first::after {
+.green_slide_first::after {
 	content: "";
 	display: table;
 	clear: both;
@@ -219,7 +240,7 @@ body {
 	font-weight: 400;
 }
 
-.green_first .left_column {
+.green_slide_first .left_column {
 	float : left;
 	width: 573px;
 	color: #535a66;
@@ -271,7 +292,7 @@ body {
 	color: #ffffff;
 }
 
-.green_first .right_column {
+.green_slide_first .right_column {
 	float: left;
 	width: 500px;
 	color: #535a66;
@@ -329,10 +350,52 @@ body {
 	margin-top: 30px;
 }
 
+/*white_slide*/
+.white_slide {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.white_slide header{
+	margin-top: 30px;
+}
+
+.white_slide .auto_img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.white_slide .auto_text{
+	display: inline-block;
+	vertical-align: middle;
+	color: #535a66;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: left;
+	font-style: italic;
+}
+
+.auto_text .auto_name {
+	font-size: 30px;
+	letter-spacing: -0.04em;
+	line-height: 30px;
+	margin:0;
+}
+
+.auto_text .auto_exp {
+	margin:0;
+}
+
+
+
+
 /*prizes_slide_second*/
 .prizes_slide_second {
 	background-color: #535a66;
 	color: #ffffff;
+	padding-top: 50px;
 	padding-bottom: 100px;
 }
 
@@ -373,7 +436,7 @@ body {
 }
 
 /*green_second*/
-.green_second {
+.green_slide_second {
 	background-color: #84c71b;
 	color: #ffffff;
 	text-align: center;
@@ -381,7 +444,7 @@ body {
 	padding-top: 100px;
 }
 
-.green_second h2 {
+.green_slide_second h2 {
 	text-align: center;
 	font-family: "Open Sans", sans-serif;
 	font-size: 75px;
@@ -391,7 +454,7 @@ body {
 	letter-spacing: -0.05em;
 }
 
-.green_second .second_green_link {
+.green_slide_second .second_green_link {
 	color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -410,7 +473,7 @@ body {
 	position: relative;
 }
 
-.green_second .second_green_link::before {
+.green_slide_second .second_green_link::before {
 	content: "";
 	background: url(../img/icon_secondGreenLink.png);
 	position: absolute;
@@ -425,12 +488,12 @@ body {
 	transform: skewX(10deg);
 }
 
-.green_second .second_green_link:hover {
+.green_slide_second .second_green_link:hover {
 	background-color:#00a086;
 	border-color: #00a086;
 }
 
-.green_second .second_green_link:active {
+.green_slide_second .second_green_link:active {
 	border-color: #84c71b;
 	background-color: #84c71b;
 }
@@ -442,7 +505,17 @@ body {
 	text-align: center;
 	font-size: 18px;
 	line-height: 24px;
+	padding-top: 55px;
 	padding-bottom: 55px;
+}
+
+.main_footer .logo_footer {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 50px;
+}
+.main_footer .logo_carmart {
+	margin-right: 200px;
 }
 
 .main_footer .footer_contacts {
@@ -476,7 +549,7 @@ body {
 	width: 42%;
 	z-index: 50;
 	padding-left: 60px;
-	padding-top: 60px;
+	padding-top: 50px;
 	padding-bottom: 30px;
 }
 
@@ -498,10 +571,10 @@ body {
 	font-weight: 700;
 	font-style: italic;
 	font-size: 34px;
-	line-height: normal;
+	line-height: 38px;
 	color:#535a66;
-	width: 350px;
-	letter-spacing: -0.04em;
+	width: 355px;
+	letter-spacing: -0.05em;
 }
 
 .popup_window h2 span {
@@ -517,8 +590,8 @@ body {
 	font-family: 'PT Sans Caption', sans-serif;
 	font-size: 20px;
 	color: #535a66;
-	padding: 10px 8px;
-	width: 340px;
+	padding: 12px 8px;
+	width: 354px;
 	margin-bottom: 20px;
 }
 
@@ -533,7 +606,7 @@ body {
 	text-transform: uppercase;
 	width: 375px;
 	padding: 15px 0;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .popup_window .social_info{
@@ -542,6 +615,7 @@ body {
 	line-height: 30px;
 	color: #5e6470;
 	padding: 0 10px;
+	letter-spacing: -0.03em;
 	width: 355px;
 }
 
@@ -555,6 +629,7 @@ body {
 	display: none;
 	background-color: rgba(255,255,255,0.95);
 }
+
 
 /*email popup*/
 .email_popup {
@@ -585,9 +660,10 @@ body {
 .email_popup textarea[name="message"] {
 	color: #5e6470;
 	padding: 10px 8px;
-	width: 340px;
+	width: 354px;
 	font-family: 'PT Sans Caption', sans-serif;
 	font-size: 20px;
+	margin-top: -10px;
 	margin-bottom: 10px;
 }
 
@@ -598,6 +674,12 @@ body {
 	letter-spacing: -0.04em;
 	text-transform: uppercase;
 	width: 190px;
+	margin-bottom: 40px;
+}
+/*!!!!!!!!!!!!!!!*/
+.email_popup_succes .social_info {
+	display: inline-block;
+	padding:0;
 }
 
 .popup_show {
