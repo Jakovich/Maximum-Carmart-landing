@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Carmart | Розыгрыш автомобиля</title>
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|Roboto:400,700italic,700,400italic|PT+Sans:700,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic|Roboto:400,700,700italic,400italic|PT+Sans:400,700|PT+Sans+Caption:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
@@ -31,7 +31,7 @@
 			</header>
 			<div class="link_intro">
 				<p>Узнайте первым о начале розыгрыша.</p>
-				<a href="#" class="btn_intro subscribe_popup">Узнать первым</a>	
+				<a href="#" class="btn_intro subscribe_popup_link">Узнать первым</a>	
 			</div>
 		</div>
 	</section>
@@ -79,19 +79,19 @@
 					<p class="spring_color">Новенький Hyundai Solaris может выиграть каждый. </p>
 					<p>Условия и дату конкурса мы держим в секрете.</p>
 					<p>Оставь свой е-мейл или подпишись на группу Carmart – и ты узнаешь обо всем первым.</p>
-					<a href="#" class="spring_link subscribe_popup">Не упусти свой шанс!</a>
+					<a href="#" class="spring_link subscribe_popup_link">Не упусти свой шанс!</a>
 				</article>
 				<div class="spring_footer">
 					<p>Проверить, что все это не шутка 
 и задать вопросы можно по почте:</p>
-					<a href="#" class="email_popup">solaris@carmart.ru</a>
+					<a href="#" class="email_popup_link">solaris@carmart.ru</a>
 				</div>
 			</div>
 			<div class="right_column">
 				<div class="email_invit">
 					<p>Оставь свой е-мейл,
 вступай в нашу группу VK, FB</p>
-					<a href="#" class="email_link subscribe_popup">Я в игре!</a>
+					<a href="#" class="email_link subscribe_popup_link">Я в игре!</a>
 				</div>
 				<div class="adv info">
 					Получите секретную информацию об условиях и датах розыгрыша
@@ -132,20 +132,87 @@
 				<p class="prize_exp">для 11-50 мест</p> 
 			</div>
 			<header><h2>А также...</h2></header>
-			<div class="block">
-				
-			</div>
-			<div class="block">
-				<p><span>Полезная</span> и актуальная информация из мира автопрома</p>
-			</div>
-			<div class="block">
-				<p><span>Советы</span> для начинающих и опытных автомобилистов</p>
-			</div>
-			<div class="block">
-				<p><span>Уникальное</span> предложениеmкоторое мы пока держим в секрете</p>
+			<div class="blocks_extra">
+				<div class="block_extra">
+					<p><span class="block_extra_bold">Полезная</span> и актуальная информация из мира автопрома</p>
+				</div>
+				<div class="block_extra">
+					<p><span class="block_extra_bold">Советы</span> для начинающих и опытных автомобилистов</p>
+				</div>
+				<div class="block_extra block_extra_color">
+					<p><span class="block_extra_bold">Уникальное</span> предложение которое мы пока держим в секрете</p>
+				</div>
 			</div>
 		</div>
 	</section>
+	<section class="green_second">
+		<div class="container">
+			<img src="img/car_little.png" alt="">
+			<header><h2>Решись и побеждай!</h2></header>
+			<a href="#" class="second_green_link subscribe_popup_link"><span>Вперёд!</span></a>
+		</div>
+	</section>
+	<footer class="main_footer">
+		<div class="container">
+			<div class="logo_footer logo_carmart"><a href="#"><img src="" alt="Carmart"></a></div>
+			<div class="logo_footer logo_maximum"><a href="#"><img src="" alt="Maximum"></a></div>
+		</div>
+		<div class="footer_contacts">Проверить, что все это не шутка и задать вопросы можно по почте: <a href="#" class="footer_email email_popup_link">solaris@carmart.ru</a></div>
+		<div class="footer_copyright">ООО «Максимум авто», 195299, г. Санкт-Петербург, ул. Руставели, д. 53<br>Телефон: +7 (812) 777-77-65</div>
+	</footer>
+	
+	<div class="popup_window email_popup"> 
+		<div class="popup_close"></div>
+		<h2><span>Спроси все,</span><br> ответим сразу</h2>
+		<form class="email_form" action="/" method="post">
+			<input type="email" name="email" placeholder="Ваш email">
+			<textarea name="message" rows="7" placeholder="Сообщение"></textarea>
+			<button type="submit">Отправить</button>
+		</form>
+		<div class="social_info">
+			<p>Можно спросить в нашей группе</p>
+			<div class="vk_vidget"></div>
+			<div class="fb_vidget"></div>
+		</div>
+	</div>
+	
+	<div class="popup_window email_popup_succes" >
+		<div class="popup_close"></div>
+		<h2><span>Спасибо</span><br> за ваш отклик</h2>
+		 <p class="email_succes_subheader">Кармарт отвечает на&nbsp;все письма</p>
+		 <div class="social_info">
+		 	<p>Можно спросить в нашей группе</p>
+			<div class="vk_vidget"></div>
+			<div class="fb_vidget"></div>
+		</div>
+	</div>
+	
+	<div class="popup_window subscribe_popup">
+		<div class="popup_close"></div>
+		<h2><span>Скоро розыгрыш,</span><br> не пропусти начало!</h2>
+		<form class="subscribe_form" action="/" method="post">
+			<input type="email" name="email" placeholder="Ваш email">
+			<button type="submit">Узнать первым</button>
+		</form>
+		<div class="social_info">
+			<p>Вступайте в наши сообщества и&nbsp;узнавайте новости еще быстрее</p>
+			<div class="vk_vidget"></div>
+			<div class="fb_vidget"></div>
+		</div>
+	</div>
+	
+	<div class="popup_window subscribe_popup_succes">
+		<div class="popup_close"></div>
+		<h2><span>Заметано!</span><br> Секретное письмо уже в пути</h2>
+		<div class="social_info">
+			<p>Вступайте в наши сообщества и&nbsp;узнавайте новости еще быстрее</p>
+			<div class="vk_vidget"></div>
+			<div class="fb_vidget"></div>
+		</div>
+	</div>
+	
+	
+	
 	
 </body>
 </html>
