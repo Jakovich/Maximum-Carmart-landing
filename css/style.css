@@ -92,16 +92,17 @@ body {
 }
 
 .main_menu_logo:first-child {
-	margin-right: 90px;
+	margin-right: 100px;
 }
 .main_menu_logo:last-child {
-	margin-left: 90px;
+	margin-left: 100px;
 }
 
 .header_first_row {
-	padding-top:1px;/*!!!!*/
+	padding-top:10px;
 	width: 55%;
 	margin:0 auto;
+	margin-bottom: 170px;
 }
 
 .header_first_row h2 {
@@ -109,21 +110,22 @@ body {
 	line-height: 60px;
 	font-weight: 700;
 	letter-spacing: -0.04em;
+	margin:0;
 	text-align: center;
 }
 
 .first_row_subheader {
 	text-transform: uppercase;
+	margin-top:10px;
 	font-size: 18px;
+	line-height: 20px;
 	text-align:center;
 	line-height: normal;
-	margin-top: -40px;
 }
 
 .header_second_row {
-	margin-top: 150px;
 	width: 495px;
-	margin-left: 535px;
+	margin-left: 525px;
 }
 
 .header_second_row h1 {
@@ -131,6 +133,7 @@ body {
 	text-transform: uppercase;
 	font-size: 94px;
 	line-height: 80px;
+	margin-top:0;
 	letter-spacing: -0.06em;
 }
 
@@ -257,7 +260,7 @@ body {
 	background-repeat:no-repeat;
 	background-position: center 0;
 	padding-top: 135px;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 }
 
 .green_slide_first::after {
@@ -533,7 +536,7 @@ body {
 	color: #ffffff;
 	text-align: center;
 	padding-bottom: 240px;
-	padding-top: 240px;
+	padding-top: 235px;
 	background-image: url("../img/background_green_second.jpg");
 	background-repeat: no-repeat;
 	background-position: center 0;
@@ -785,10 +788,17 @@ body {
 	animation-duration: 1s;
 	display: block;
 }
+
+.menu_none {
+	animation-name: moveOutMenu;
+	animation-duration: 1s;
+	display:none;
+}
+
 .popup_show {
-	display: block;
 	animation-name: moveInPopup;
 	animation-duration: 0.6s;
+	display: block;
 }
 
 @keyframes moveInPopup{
@@ -799,6 +809,10 @@ body {
 @keyframes moveInMenu {
 	0% {transform: translateY(-1000px);}
 	100% {transform: translateY(0);}
+}
+@keyframes moveOutMenu {
+	0% {transform: translateY(0);}
+	100% {transform: translateY(-1000px);}
 }
 
 /*social_vidget (заменяются на виджеты, которые предоставляются сайтами vKontacte/Facebook)*/
