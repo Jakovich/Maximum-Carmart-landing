@@ -1,19 +1,20 @@
+
 body {
 	padding: 0;
 	margin: 0;
-	min-width: 1230px;
+	min-width: 1220px;
 	font-family: "PT Sans Caption", "Arial", sans-serif;
 }
 
 .container{
-	width: 1210px;
+	width: 1200px;
 	padding: 0 10px;
 	margin:0 auto;
 }
 
 /*Intro*/
 .intro {
-	padding-top: 10px;
+	padding-top:25px;
 	padding-bottom: 35px;
 	background-color:#455c7c;
 	background-image:url('../img/background_intro.jpg');
@@ -23,6 +24,7 @@ body {
 }
 
 .intro_header {
+	margin-top:0;
 	position: relative;
 }
 
@@ -31,18 +33,27 @@ body {
 	top:0;
 }
 
+.logo_carmart {
+	left: 5%;
+}
+
 .logo_maximum {
-	right:0;
+	right:5%;
 }
 
 .main_nav{
 	background-color: #ffffff;
 	padding: 10px 0;
+	display: block;
+	position: absolute;
+	width:100%;
+	z-index: 100;
 }
 
 .main_menu {
 	list-style: none;
 	font-size:0;
+	text-align: center;
 }
 
 .main_menu li {
@@ -56,13 +67,38 @@ body {
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
-	padding: 10px 15px;
+	padding: 5px 0;
+	display: block;
+	text-align: center;
 }
 .main_menu a:hover {
-	background-color: grey;
+	font-weight: bold;
+}
+
+.main_menu li:nth-child(2) a{
+	width: 97px;
+}
+.main_menu li:nth-child(3) a{
+	width: 135px;
+}
+
+.main_menu li:nth-child(4) a{
+	width: 180px;
+}
+
+.main_menu li:nth-child(5) a {
+	width: 145px;
+}
+
+.main_menu_logo:first-child {
+	margin-right: 90px;
+}
+.main_menu_logo:last-child {
+	margin-left: 90px;
 }
 
 .header_first_row {
+	padding-top:1px;/*!!!!*/
 	width: 55%;
 	margin:0 auto;
 }
@@ -180,11 +216,11 @@ body {
 
 /*Partners*/
 
-.partners{
+.partners_slide{
 	background-color: #ffffff;
 }
 
-.partners h2 {
+.partners_slide h2 {
 	font-family: "PT Sans";
 	color: #535a66;
 	font-size: 60px;
@@ -248,7 +284,7 @@ body {
 
 .left_column .spring {
 	background-color: #ffffff;
-	padding: 20px 20px 60px 60px;
+	padding: 4px 20px 65px 58px;
 	border-radius: 4px;
 }
 
@@ -301,10 +337,23 @@ body {
 
 .right_column .email_invit {
 	background-color: #ffffff;
-	padding: 20px 120px 20px 120px;
+	padding: 80px 120px 30px 120px;
 	border-radius: 4px;
 	text-align: center;
 	margin-bottom: 15px;
+	position: relative;
+}
+
+.right_column .email_invit::before {
+	content: url('../img/icon_email.png');
+    display: block;
+    height: 74px;
+	width: 36px;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+	top: 45px;
+ 
 }
 
 .right_column .email_invit p {
@@ -319,9 +368,11 @@ body {
 	text-transform: uppercase;
 	color: #00a086;
 	text-decoration: none;
-	padding: 5px 60px;
+	padding: 10px 60px;
 	border: 1px solid #00a086;
 	border-radius: 4px;
+	display:inline-block;
+	margin-top: 8px;
 }
 
 .right_column .email_link:hover{
@@ -342,6 +393,11 @@ body {
 	text-align: center;
 	font-size: 25px;
 	line-height: 35px;
+	position:relative;
+}
+
+.right_column .adv::before{
+	
 }
 
 .right_column .win {
