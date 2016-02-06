@@ -44,9 +44,10 @@ body {
 .main_nav{
 	background-color: #ffffff;
 	padding: 10px 0;
-	display: block;
-	position: absolute;
+	display: none;
+	position: fixed;
 	width:100%;
+	top:0;
 	z-index: 100;
 }
 
