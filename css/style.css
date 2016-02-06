@@ -641,7 +641,7 @@ body {
 /*___popups___*/
 
 .popup_window {
-	position: absolute;
+	position: fixed;
 	right:0;
 	top: 15%;
 	width: 42%;
@@ -780,10 +780,26 @@ body {
 	padding:0;
 }
 
-.popup_show {
+.menu_show {
+	animation-name: moveInMenu;
+	animation-duration: 1s;
 	display: block;
 }
+.popup_show {
+	display: block;
+	animation-name: moveInPopup;
+	animation-duration: 0.6s;
+}
 
+@keyframes moveInPopup{
+	0% {transform: translateX(1000px);}
+	100% {transform: translateX(0);}
+}
+
+@keyframes moveInMenu {
+	0% {transform: translateY(-1000px);}
+	100% {transform: translateY(0);}
+}
 
 /*social_vidget (заменяются на виджеты, которые предоставляются сайтами vKontacte/Facebook)*/
 
