@@ -33,11 +33,11 @@ body {
 	top:0;
 }
 
-.logo_carmart {
+.intro_header .logo_carmart {
 	left: 5%;
 }
 
-.logo_maximum {
+.intro_header .logo_maximum {
 	right:5%;
 }
 
@@ -411,7 +411,7 @@ body {
     height: 61px;
 	width: 67px;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -8%;
     position: absolute;
 	top: 40px;
 }
@@ -834,5 +834,229 @@ body {
 	background-Image: url(../img/fb_vidget.jpg);
 	width: 277px;
 	height: 267px;
+}
+
+
+/*Mefiaqueries*/
+@media screen and (max-width: 500px) {
+	.main_nav {
+		display: none;
+	}
+	body {
+	
+		min-width: 480px;
+	}
+	
+	.container {
+		width:auto;
+		min-width: 480px;
+		padding:0;
+	}
+	
+	/*intro*/
+	.intro {
+		background-image: url("../img/mobile_background_intro.jpg");
+		
+	
+		background-repeat: no-repeat;
+		background-position: center 0;
+		background-color:#455c7c;
+		padding-bottom: 5px;
+	}
+	.header_first_row {
+		width: auto;
+		padding: 4%;
+		margin-bottom: 60px;
+	}
+	
+	.header_first_row h2 {
+		margin-top: 80px;
+		font-size: 40px;
+		line-height: 40px;
+	}
+	
+	.first_row_subheader {
+		font-size: 20px;
+		line-height: 24px;
+		color: rgba(255,255,255,0.5);
+	}
+	
+	.header_second_row {
+	width: 280px;
+	margin-left: 180px;
+}
+	
+	.header_second_row h1 {
+	font-size: 53px;
+	line-height: 45px;
+	margin-top:0;
+	letter-spacing: -0.06em;
+}
+
+	
+	.header_second_row .brand_intro {
+	font-size: 40px;
+}
+	
+	.link_intro p{
+		font-size: 25px;
+		line-height: 24px;
+		padding:5px 10%;
+	}
+	
+	.link_intro .btn_intro {
+		background-color: #00a086;
+		border: none;
+		padding-left: 20%;
+		padding-right: 20%;
+		text-align: center;
+	}
+	
+	.link_intro .btn_intro:hover {
+		background-color: #00a086;
+		border: none;
+		padding-left: 20%;
+		padding-right: 20%;
+		text-align: center;
+	}
+	
+	
+	/*prizes_slide_first*/
+	
+	.prizes_slide_first {
+		background-color: #535a66;
+		background-image: url("../img/mobile_background_greyWhite.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-position: bottom center;
+		padding-bottom: 20px;
+	}
+	
+	
+	.prize_item {
+		display: inline-block;
+		padding:0 7%;
+		margin-left:0;
+		margin-bottom: 80px;
+	}
+	
+	
+	/*partners slide*/
+	.partners_slide {
+		
+	}
+	.partners_slide h2{
+		font-size: 40px;
+		line-height: 45px;
+	}
+	.partner_items {
+		width: auto;
+	}
+	
+	.partner_item {
+		display: block;
+		text-align: center;
+	}
+	
+	.partner_item a{
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	
+	/*green_slide_first*/
+	
+	.green_slide_first {
+		background-image: url("../img/mobile_background_green.jpg");
+		background-repeat:no-repeat;
+	}
+	.green_slide_first .left_column,
+	.green_slide_first .right_column {
+		float: none;
+		width: auto;
+	}
+	
+	.green_slide_first .spring {
+		width: auto;
+		border-radius: 0;
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	.spring .spring_link {
+		font-size: 33px;
+		display: inline-block;
+	}
+	.left_column .spring_footer {
+		padding-top: 0;
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	
+	.green_slide_first .right_column{
+		margin: 0 4%;
+	}
+	
+	.right_column .email_invit {
+		padding: 80px 18%;
+	}
+	
+	/*White slide*/
+	.white_slide {
+		display: none;
+	}
+	
+	/*prizes_slide_second*/
+	.prizes_slide_second {
+		display: none;
+	}
+	
+	/*green_slide_second*/
+	.green_slide_second {
+		background-image: url("../img/mobile_background_green_second.jpg");
+		background-position: bottom center;
+		padding-top: 0;
+		padding-bottom:100px;
+	}
+	.green_slide_second h2{
+		font-size: 60px;
+	}
+	
+	/*footer*/
+	.main_footer {
+		background-image: none;
+		background-color: #535a66;
+		font-size: 24px;
+		line-height: 30px;
+		line-heighn: normal;
+		padding-top: 80px;
+	}
+	
+	.main_footer .logo_footer {
+		display: block;
+	}
+	.main_footer .logo_carmart {
+		margin-right:0;
+	}
+	
+	.main_footer .footer_contacts {
+		padding: 0 23%;
+		padding-top: 50px;
+		margin-bottom: 110px;
+	}
+	
+	.footer_contacts .footer_email {
+		display: block;
+		margin-top: 45px;
+	}
+	
+	.main_footer .footer_copyright {
+		padding: 0 10%;
+	}
+	
+	/*popups*/
+	.popup_window {
+		width: 87.5%;
+		top:0;
+		height: 890px;/*!!!!!!!!!!!*/
+	}
 }
 
