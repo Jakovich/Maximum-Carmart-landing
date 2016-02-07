@@ -2,12 +2,13 @@
 body {
 	padding: 0;
 	margin: 0;
-	min-width: 1220px;
+	
 	font-family: "PT Sans Caption", "Arial", sans-serif;
 }
 
 .container{
-	width: 1200px;
+	max-width: 1200px;
+	min-width: 700px;
 	padding: 0 10px;
 	margin:0 auto;
 }
@@ -186,7 +187,7 @@ body {
 	text-align: center;
 }
 
-.prize-item {
+.prize_item {
 	display: inline-block;
 	vertical-align: bottom;
 	text-align: center;
@@ -196,7 +197,7 @@ body {
 	font-style: italic;
 }
 
-.prize-item:first-child{
+.prize_item:first-child{
 	margin-left: 0px;
 }
 
@@ -834,5 +835,58 @@ body {
 	background-Image: url(../img/fb_vidget.jpg);
 	width: 277px;
 	height: 267px;
+}
+
+
+/*Mefiaqueries*/
+@media screen and (max-width: 500px) {
+	.main_nav {
+		display: none;
+	}
+	body {
+		width: auto;
+	}
+	
+	.container {
+		min-width: 300px;
+		padding:0 5px;
+	}
+	
+	/*intro*/
+	
+	.header_first_row {
+		width: auto;
+		padding: 4%;
+	}
+	
+	.header_first_row h2 {
+		font-size: 40px;
+		line-height: 40px;
+	}
+	
+	.first_row_subheader {
+		font-size: 20px;
+		line-height: 24px;
+		color: rgba(255,255,255,0.5);
+	}
+	
+	.link_intro p{
+		font-size: 25px;
+		line-height: 24px;
+	}
+	
+	.link_intro .btn_intro {
+		background-color: #00a086;
+		border: none;
+		padding-left: 20%;
+		padding-right: 20%;
+		text-align: center;
+	}
+	
+	.prize_item {
+		margin-left:0;
+	}
+	
+	
 }
 
