@@ -986,6 +986,7 @@ body {
 		display: inline-block;
 	}
 	.left_column .spring_footer {
+		padding-top: 0;
 		padding-left: 7%;
 		padding-right: 7%;
 	}
@@ -1026,21 +1027,36 @@ body {
 		font-size: 24px;
 		line-height: 30px;
 		line-heighn: normal;
+		padding-top: 80px;
 	}
 	
 	.main_footer .logo_footer {
 		display: block;
 	}
+	.main_footer .logo_carmart {
+		margin-right:0;
+	}
 	
 	.main_footer .footer_contacts {
 		padding: 0 23%;
+		padding-top: 50px;
+		margin-bottom: 110px;
 	}
+	
 	.footer_contacts .footer_email {
 		display: block;
 		margin-top: 45px;
 	}
+	
 	.main_footer .footer_copyright {
 		padding: 0 10%;
+	}
+	
+	/*popups*/
+	.popup_window {
+		width: 87.5%;
+		top:0;
+		height: 890px;/*!!!!!!!!!!!*/
 	}
 }
 
