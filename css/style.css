@@ -2,13 +2,12 @@
 body {
 	padding: 0;
 	margin: 0;
-	
+	min-width: 1220px;
 	font-family: "PT Sans Caption", "Arial", sans-serif;
 }
 
 .container{
-	max-width: 1200px;
-	min-width: 700px;
+	width: 1200px;
 	padding: 0 10px;
 	margin:0 auto;
 }
@@ -844,22 +843,34 @@ body {
 		display: none;
 	}
 	body {
-		width: auto;
+	
+		min-width: 480px;
 	}
 	
 	.container {
-		min-width: 300px;
+		width:auto;
+		min-width: 480px;
 		padding:0;
 	}
 	
 	/*intro*/
+	.intro {
+		background-image: url("../img/mobile_background_intro.jpg");
+		
 	
+		background-repeat: no-repeat;
+		background-position: center 0;
+		background-color:#455c7c;
+		padding-bottom: 5px;
+	}
 	.header_first_row {
 		width: auto;
 		padding: 4%;
+		margin-bottom: 60px;
 	}
 	
 	.header_first_row h2 {
+		margin-top: 80px;
 		font-size: 40px;
 		line-height: 40px;
 	}
@@ -870,9 +881,27 @@ body {
 		color: rgba(255,255,255,0.5);
 	}
 	
+	.header_second_row {
+	width: 280px;
+	margin-left: 180px;
+}
+	
+	.header_second_row h1 {
+	font-size: 53px;
+	line-height: 45px;
+	margin-top:0;
+	letter-spacing: -0.06em;
+}
+
+	
+	.header_second_row .brand_intro {
+	font-size: 40px;
+}
+	
 	.link_intro p{
 		font-size: 25px;
 		line-height: 24px;
+		padding:5px 10%;
 	}
 	
 	.link_intro .btn_intro {
@@ -900,6 +929,7 @@ body {
 		background-repeat: no-repeat;
 		background-position: bottom center;
 		background-position: bottom center;
+		padding-bottom: 20px;
 	}
 	
 	
@@ -913,6 +943,7 @@ body {
 	
 	/*partners slide*/
 	.partners_slide {
+		
 	}
 	.partners_slide h2{
 		font-size: 40px;
@@ -933,6 +964,11 @@ body {
 	}
 	
 	/*green_slide_first*/
+	
+	.green_slide_first {
+		background-image: url("../img/mobile_background_green.jpg");
+		background-repeat:no-repeat;
+	}
 	.green_slide_first .left_column,
 	.green_slide_first .right_column {
 		float: none;
@@ -973,6 +1009,12 @@ body {
 	}
 	
 	/*green_slide_second*/
+	.green_slide_second {
+		background-image: url("../img/mobile_background_green_second.jpg");
+		background-position: bottom center;
+		padding-top: 0;
+		padding-bottom:100px;
+	}
 	.green_slide_second h2{
 		font-size: 60px;
 	}
