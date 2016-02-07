@@ -186,7 +186,7 @@ body {
 	text-align: center;
 }
 
-.prize-item {
+.prize_item {
 	display: inline-block;
 	vertical-align: bottom;
 	text-align: center;
@@ -196,7 +196,7 @@ body {
 	font-style: italic;
 }
 
-.prize-item:first-child{
+.prize_item:first-child{
 	margin-left: 0px;
 }
 
