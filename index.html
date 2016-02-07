@@ -7,6 +7,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic%7CRoboto:400,700,700italic,400italic%7CPT+Sans:400,700%7CPT+Sans+Caption:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/farinspace/jquery.imgpreload.min.js"></script>
+	
 </head>
 <body>
 	<nav class="main_nav">
@@ -21,6 +24,15 @@
 				</ul>
 			</div>
 		</nav>
+	<nav class="mobile_nav">
+		<div class="container">
+				<ul>
+					<li><a href="#" title="Carmart"><img src="img/logo_carmart.png" alt="Carmart" width="148" height="37"></a></li>
+					<li><a href="#" title="Maximum"><img src="img/logo_maximum_color.png" alt="Maximum" width="133" height="41"></a></li>
+					<li><div class="mobile_menu"><span></span></div></li>
+			</ul>
+		</div>
+	</nav>
 	<section class="intro">
 		<div class="container">
 			<header class="intro_header">
@@ -169,7 +181,7 @@
 		<div class="footer_copyright">ООО «Максимум авто», 195299, г. Санкт-Петербург, ул. Руставели, д. 53<br>Телефон: +7 (812) 777-77-65</div>
 	</footer>
 	
-	
+		
 	<!-- popups-->
 	
 	<div class="popup_window email_popup"> 
@@ -222,9 +234,18 @@
 		</div>
 	</div>
 	
+	<div class="popup_window mobile_menu_popup">
+		<div class="menu_close"></div>
+		<a href="#" class="subscribe_popup_link">Я в игре!</a>
+		<a href="#">Как это работает</a>
+		<a href="#" class="email_popup_link">solaris@carmart.ru</a></div>
+		
+	
+	
 	<script src="js/menu.js"></script>
 	<script src="js/email.js"></script>
 	<script src="js/subscribe.js"></script>
+	<script src="js/design.js"></script>
 	
 </body>
 </html>
