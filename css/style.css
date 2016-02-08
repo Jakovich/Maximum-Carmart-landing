@@ -44,10 +44,10 @@ body {
 .main_nav {
 	background-color: #ffffff;
 	padding: 10px 0;
-	display: none;
+	display: block;
 	position: fixed;
 	width:100%;
-	top:0;
+	top: -105px;
 	z-index: 100;
 }
 
@@ -91,6 +91,7 @@ body {
 
 .main_menu li:nth-child(5) a {
 	width: 145px;
+	color: #00a086;
 }
 
 .main_menu_logo:first-child {
@@ -796,12 +797,6 @@ body {
 	padding:0;
 }
 
-.menu_show {
-	animation-name: moveInMenu;
-	animation-duration: 1s;
-	display: block;
-}
-
 .menu_none {
 	animation-name: moveOutMenu;
 	animation-duration: 1s;
@@ -851,7 +846,9 @@ body {
 	position: fixed;
 	text-align: right;
 	display: block;
+	top: -105px;
 	padding:0;
+	padding-right: 5px;
 	margin:0;
 	background-color: #ffffff;
 	z-index:50;
@@ -946,7 +943,11 @@ body {
 	padding: 30px;
 }
 
-
+.menu_show {
+	animation-name: moveInMenu;
+	animation-duration: 1s;
+	display: block;
+}
 
 /*Mefiaqueries*/
 @media screen and (max-width: 500px) {
@@ -1076,6 +1077,7 @@ body {
 	.green_slide_first {
 		background-image: url("../img/mobile_background_green.jpg");
 		background-repeat:no-repeat;
+		padding-bottom: 85px;
 	}
 	
 	.green_slide_first .left_column,

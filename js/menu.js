@@ -1,10 +1,13 @@
-var menuElem = document.querySelector(".main_nav");
-window.onscroll = function() {
-	if (window.pageYOffset > 250) {
-		menuElem.classList.add("menu_show");
-	};
-	if (window.pageYOffset < 250) {
-		if (menuElem.classList.contains("menu_show"))
-		menuElem.classList.remove("menu_show");
-	};
-};
+$(function() {
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 200) {
+			  if ($(window).width() <= 490) {
+				$("nav.mobile_nav").animate({'top':'0px'},400);
+			  };
+		}
+				else{
+					$("nav.mobile_nav").stop(true).animate({'top':'-105px'},300);
+		};
+
+	});
+});

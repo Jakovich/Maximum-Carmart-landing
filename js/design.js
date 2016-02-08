@@ -1,28 +1,22 @@
-
-
 var windowSize = '';
 var windowWidth = 0;
 var actualSize = 0;
 var newWindowSize;
-
+var footerLogo = $('.main_footer');
 
 $(document).ready(function(){
 	checkBrowserSize();
+	setInterval ('checkBrowserSize()',1000 );
+
 });
 
 function checkBrowserSize() {
 	windowWidth = window.outerWidth;
-	var contentWidth = $('body').width();
-	var sizeDiff = windowWidth - contentWidth;
-	actualSize = windowWidth - sizeDiff;
+	if (windowWidth <= 480) {
+		$("div.mobile_menu").addClass("popup_show");
+	};
 	
-	if (actualSize < 480) 
-	{newWindowSize = 'mobile'; 
-	 console.log(newWindowSize);
-	 }
-	
-	
-}
+};
 				 
 
 
