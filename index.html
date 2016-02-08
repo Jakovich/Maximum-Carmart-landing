@@ -188,8 +188,8 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
 	<div class="popup_window email_popup"> 
 		<div class="popup_close"></div>
 		<h2><span>Спроси все,</span><br> ответим сразу</h2>
-		<form class="email_form" action="mailto:ua9ond@yandex.ru" method="post">
-			<input type="email" name="email" placeholder="Ваш email">
+		<form class="email_form" action="/" method="post">
+			<input type="email" name="email" placeholder="Ваш email" required>
 			<textarea name="message" rows="5" placeholder="Сообщение" required></textarea>
 			<button type="submit" class="email_succes">Отправить</button>
 		</form>
@@ -214,7 +214,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
 	<div class="popup_window subscribe_popup">
 		<div class="popup_close"></div>
 		<h2><span>Скоро розыгрыш,</span><br> не пропусти начало!</h2>
-		<form class="subscribe_form" action="mailto:ua9ond@yandex.ru" method="post" id=”as” onsubmit="dataLayer.push({'event': 'sendform'});">
+		<form class="subscribe_form" action="/" method="post" id=”as” onsubmit="dataLayer.push({'event': 'sendform'});">
 			<input type="email" name="email" placeholder="Ваш email" required>
 			<button type="submit" class="submit_succes">Узнать первым</button>
 		</form>
@@ -241,10 +241,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
 		<a href="#">Как это работает</a>
 		<a href="#" class="mobile_email_link email_popup_link">solaris@carmart.ru</a></div>
 		
-		
-	<script src="js/email_jq.js"></script>
-	<script src="js/menu_moblie.js"></script>
-	<script src="js/menu.js"></script>
-	<script src="js/subscribe_jq.js"></script>
+	<script	src="js/main.js"></script>
+
 </body>
 </html>
