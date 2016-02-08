@@ -658,7 +658,8 @@ body {
 	position: fixed;
 	overflow-y: scroll;
 	max-height: 75%;
-	right:0;
+	right:-1000px;
+	display: none;
 	top: 12%;
 	width: 65%;
 	z-index: 50;
@@ -841,7 +842,7 @@ body {
 }
 
 /*mobile_nav*/
-/*weeeeewf*/
+
 .mobile_nav {
 	position: fixed;
 	text-align: right;

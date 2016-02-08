@@ -19,12 +19,20 @@ $(document).ready(function() {
 	});
 	
 	mobileSubscribeLink.click( function() {
-	mobileMenu.css('display','none');
+	mobileMenu.animate({top: '-500'}, 100,
+					   function(){
+								$(this).css('display','none');
+							}
+						  );
 					   
 	});
 	
 	mobileEmailLink.click( function() {
-	mobileMenu.css('display','none');
+	mobileMenu.animate({top: '-500'}, 100,
+					   function(){
+								$(this).css('display','none');
+							}
+						  );
 	});
 	
 										 
