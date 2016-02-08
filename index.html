@@ -7,6 +7,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic%7CRoboto:400,700,700italic,400italic%7CPT+Sans:400,700%7CPT+Sans+Caption:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+	
 </head>
 <body>
 	<nav class="main_nav">
@@ -16,15 +20,24 @@
 					<li><a href="#">Призы</a></li>
 					<li><a href="#">Партнеры</a></li>
 					<li><a href="#">Как это работает</a></li>
-					<li><a href="#" class="subscribe_popup_link">Участвовать</a></li>
+					<li><a href="#" class="subscribe_popup_link">Узнать первым</a></li>
 					<li class="main_menu_logo"><a href="#" title="Maximum"><img src="img/logo_maximum_color.png" width="144" height="45" alt="Maximum"></a></li>
 				</ul>
 			</div>
 		</nav>
+	<nav class="mobile_nav">
+		<div class="container">
+				<ul>
+					<li><a href="#" title="Carmart"><img  src="img/logo_carmart.png" alt="Carmart" width="148" height="37"></a></li>
+					<li><a href="#" title="Maximum"><img src="img/logo_maximum_color.png" alt="Maximum" width="133" height="41"></a></li>
+					<li><div class="mobile_menu"><span></span></div></li>
+			</ul>
+		</div>
+	</nav>
 	<section class="intro">
 		<div class="container">
 			<header class="intro_header">
-				<div class="logo_intro logo_carmart"><a href="#" title="Carmart"><img src="img/logo_carmart.png" alt="Carmart" width="159" height="40"></a></div>
+				<div class="logo_intro logo_carmart"><a href="#" title="Carmart"><img src="img/logo_carmart_nocolor.png" alt="Carmart" width="159" height="40"></a></div>
 				<div class="logo_intro logo_maximum"><a href="#" title="Maximum"><img src="img/logo_maximum.png" alt="Maximum" width="132" height="41"></a></div>
 				<div class="header_first_row">
 					<h2>Хотите автомобиль абсолютно бесплатно?</h2>
@@ -162,22 +175,22 @@
 	</section>
 	<footer class="main_footer">
 		<div class="container">
-			<div class="logo_footer logo_carmart"><a href="#"><img src="img/logo_carmart_big.png" alt="Carmart" width="394" height="98"></a></div>
+			<div class="logo_footer logo_carmart"><a href="#"><img src="img/logo_carmart_nocolor.png" alt="Carmart" width="394" height="98"></a></div>
 			<div class="logo_footer logo_maximum"><a href="#"><img src="img/logo_maximum_big.png" width="354" height="109" alt="Maximum"></a></div>
 		</div>
 		<div class="footer_contacts">Проверить, что все это не шутка и&nbsp;задать вопросы можно по почте: <a href="#" class="footer_email email_popup_link">solaris@carmart.ru</a></div>
-		<div class="footer_copyright">ООО «Максимум авто», 195299, г. Санкт-Петербург, ул. Руставели, д. 53<br>Телефон: +7 (812) 777-77-65</div>
+		<div class="footer_copyright">ООО «Максимум авто», 195299, г. Санкт-Петербург, ул.&nbsp;Руставели, д. 53<br>Телефон: +7 (812) 777-77-65</div>
 	</footer>
 	
-	
+		
 	<!-- popups-->
 	
 	<div class="popup_window email_popup"> 
 		<div class="popup_close"></div>
 		<h2><span>Спроси все,</span><br> ответим сразу</h2>
 		<form class="email_form" action="/" method="post">
-			<input type="email" name="email" placeholder="Ваш email">
-			<textarea name="message" rows="5" placeholder="Сообщение"></textarea>
+			<input type="email" name="email" placeholder="Ваш email" required>
+			<textarea name="message" rows="5" placeholder="Сообщение" required></textarea>
 			<button type="submit" class="email_succes">Отправить</button>
 		</form>
 		<div class="social_info">
@@ -201,8 +214,8 @@
 	<div class="popup_window subscribe_popup">
 		<div class="popup_close"></div>
 		<h2><span>Скоро розыгрыш,</span><br> не пропусти начало!</h2>
-		<form class="subscribe_form" action="/" method="post">
-			<input type="email" name="email" placeholder="Ваш email">
+		<form class="subscribe_form" action="/" method="post" id=”as” onsubmit="dataLayer.push({'event': 'sendform'});">
+			<input type="email" name="email" placeholder="Ваш email" required>
 			<button type="submit" class="submit_succes">Узнать первым</button>
 		</form>
 		<div class="social_info">
@@ -222,9 +235,13 @@
 		</div>
 	</div>
 	
-	<script src="js/menu.js"></script>
-	<script src="js/email.js"></script>
-	<script src="js/subscribe.js"></script>
-	
+	<div class="mobile_menu_popup">
+		<div class="menu_close"></div>
+		<a href="#" class="mobile_subscribe_link subscribe_popup_link">Я в игре!</a>
+		<a href="#">Как это работает</a>
+		<a href="#" class="mobile_email_link email_popup_link">solaris@carmart.ru</a></div>
+		
+	<script	src="js/main.js"></script>
+
 </body>
 </html>
