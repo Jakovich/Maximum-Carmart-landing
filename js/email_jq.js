@@ -19,4 +19,26 @@ $(document).ready(function() {
 							}
 						  );
 	});
-});
+	
+	$(".email_form").submit(function(){
+		emailPopup.animate({right: '-1000'}, 500,
+					   function(){
+								$(this).css('display','none');
+							}
+						  );
+		emailSuccesPopup.css('display','block').animate({'right': '0'}, 700);
+	});
+	
+	emailSuccesClose.click( function() {
+	emailSuccesPopup.animate({right: '-1000'}, 500,
+					   function(){
+								$(this).css('display','none');
+							}
+						  );
+	});
+	
+	
+	
+	});
+	
+

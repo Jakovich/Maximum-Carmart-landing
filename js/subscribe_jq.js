@@ -19,5 +19,24 @@ $(document).ready(function() {
 							}
 						  );
 	});
+	
+	$(".subscribe_form").submit(function(){
+		subscribePopup.animate({right: '-1000'}, 500,
+					   function(){
+								$(this).css('display','none');
+							}
+						  );
+		subscribeSuccesPopup.css('display','block').animate({'right': '0'}, 700);
+	});
+	
+	subscribeSuccesClose.click( function() {
+	subscribeSuccesPopup.animate({right: '-1000'}, 500,
+					   function(){
+								$(this).css('display','none');
+							}
+						  );
+	});
+	
+	
 
 });
