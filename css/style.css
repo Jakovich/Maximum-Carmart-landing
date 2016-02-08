@@ -884,6 +884,7 @@ body {
 	width: 35px;
 	height: 22px;
 	cursor:pointer;
+	display: block
 }
 
 .mobile_menu span {
@@ -914,9 +915,13 @@ body {
 .mobile_menu_popup {
 	background-color: rgba(255,255,255,0.95);
 	display: none;
-	padding: 150px 0;
-	width: 100%!important;/*переделать*/
-	height: auto!important;
+	position: fixed;
+	top: -500px;
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	padding-bottom: 150px;
+	z-index: 100;
 }
 
 .mobile_menu_popup .menu_close {
