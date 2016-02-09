@@ -13,6 +13,7 @@ $(function() {
 	var mobileMenuClose = $(".menu_close");
 	var mobileSubscribeLink = $(".mobile_subscribe_link");
 	var mobileEmailLink = $(".mobile_email_link");
+	var emailSuccesClose = $(".popup_close");
 
 
 	/*navigation*/
@@ -84,6 +85,9 @@ $(function() {
 	$(".email_form").submit(function(){
 		hidePopup(emailPopup);
 		emailSuccesPopup.show().animate({'right': '0'}, 700);
+	});
+	 emailSuccesClose.click( function() {
+		hidePopup(emailPopup);
 	});
 
 	var hidePopup = function (popup) {

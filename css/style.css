@@ -809,15 +809,6 @@ body {
 	padding:0;
 }
 
-.menu_none {
-	display:none;
-}
-
-.popup_show {
-	display: block;
-}
-
-
 /*social_vidget (заменяются на виджеты, которые предоставляются сайтами vKontacte/Facebook)*/
 
 .vk_vidget {
