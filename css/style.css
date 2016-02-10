@@ -834,7 +834,6 @@ body {
 	display: block;
 	top: -105px;
 	left: 50%;
-	
 	padding:0;
 	padding-right: 5px;
 	margin:0;
@@ -886,7 +885,9 @@ body {
 	display: none;
 	position: fixed;
 	top: -500px;
-	width: 100%;
+	left:50%;
+	margin-left: -240px;
+	width: 480px;
 	height: auto;
 	padding-top: 100px;
 	padding-bottom: 150px;
