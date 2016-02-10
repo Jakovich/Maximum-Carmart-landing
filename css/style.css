@@ -320,7 +320,8 @@ body {
 .left_column .spring_link {
 	font-size: 36px;
 	font-weight: bold;
-	text-decoration-style: dotted;
+	-webkit-text-decoration-style: dotted;
+	        text-decoration-style: dotted;
 	text-transform: uppercase;
 	color: #00a086;
 }
@@ -338,7 +339,8 @@ body {
 
 .left_column .spring_footer .email_popup_link {
 	font-weight: bold;
-	text-decoration-style: dotted;
+	-webkit-text-decoration-style: dotted;
+	        text-decoration-style: dotted;
 	color: #ffffff;
 }
 
@@ -647,7 +649,8 @@ body {
 
 .footer_contacts .footer_email {
 	color: #ffffff;
-	text-decoration-style: dotted;
+	-webkit-text-decoration-style: dotted;
+	        text-decoration-style: dotted;
 	font-weight: bold;
 }
 
@@ -831,13 +834,14 @@ body {
 .mobile_nav {
 	position: fixed;
 	text-align: right;
+	width: 480px;
 	display: block;
 	top: -105px;
 	left: 50%;
 	padding:0;
 	padding-right: 5px;
 	margin:0;
-	margin-left: -245px;
+	margin-left: -240px;
 	background-color: #ffffff;
 	z-index:50;
 }
